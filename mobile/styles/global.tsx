@@ -29,6 +29,7 @@ export const balanceCard=StyleSheet.create({
     container:{
         backgroundColor:"#1A2B4C",
         padding:30,
+        marginTop:0,
         margin:15,
         justifyContent:"center",
         borderRadius:25,
@@ -52,6 +53,8 @@ export const balanceCard=StyleSheet.create({
         margin:30,
         marginLeft:0,
         padding:10,
-        width:"60%"
+        width:"60%",
+        justifyContent:"center",
+        textAlign:'center'
     }
 })
