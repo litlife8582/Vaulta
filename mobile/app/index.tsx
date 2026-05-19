@@ -11,8 +11,9 @@ import { useState,useEffect } from "react";
 import { globalStyle } from "@/styles/global";
 
 //Component
-import BalanceCard from "@/components/BalanceCard";
 import Titlebar from "@/components/Titlebar";
+import BalanceCard from "@/components/budget/BalanceCard";
+import SpendingBreakdown from "@/components/budget/spendings/SpendingBreakdown";
 
 export default function Index() {
   const [balance,setBalance]=useState(0);
@@ -40,6 +41,7 @@ export default function Index() {
         <BalanceCard
          balance={balance}
          growthPercentage={growthPercentage}/>
+         <SpendingBreakdown/>
       </View>
     </SafeAreaView>
     

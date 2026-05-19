@@ -58,3 +58,19 @@ export const balanceCard=StyleSheet.create({
         textAlign:'center'
     }
 })
+
+export const spendingBreakdown=StyleSheet.create({
+    container:{
+        
+    },
+    input:{
+        display:"flex",
+        flex:2
+    }
+})
+
+export const transactions=StyleSheet.create({
+    container:{
+        
+    }
+})
