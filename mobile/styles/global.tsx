@@ -59,7 +59,7 @@ export const balanceCard=StyleSheet.create({
     }
 })
 
-export const spendingBreakdown=StyleSheet.create({
+export const transactionHistory=StyleSheet.create({
     container:{
         backgroundColor:"#EAF1FF",
         padding:30,
@@ -83,7 +83,7 @@ export const spendingBreakdown=StyleSheet.create({
 
     modalOverlay:{
         flex:1,
-        backgroundColor:"rgba(0,0,0,0.5)",
+        backgroundColor:"rgba(0,0,0,0.8)",
         justifyContent:"center",
         padding:30,
     },
@@ -115,6 +115,18 @@ export const spendingBreakdown=StyleSheet.create({
         padding:20,
         width:120,
         alignContent:"center",
+    },
+    modalAddButtonText:{
+        fontFamily:"Montserrat_bold",
+
+    },
+    monthlySpending:{
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+    monthlySpendingtxt:{
+        fontFamily:"Montserrat_extraLight",
+        fontSize:17,
     }
 })
 
@@ -122,5 +134,12 @@ export const transactions=StyleSheet.create({
     container:{
         padding:20,
         margin:10,
+        flexDirection:"row",
+        justifyContent:"space-between",
+        
+    },
+    title:{
+        fontFamily:"Montserrat_boldItalic",
+        fontSize:15,
     }
 })

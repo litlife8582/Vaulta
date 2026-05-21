@@ -7,7 +7,7 @@ export default function Transactions({data}:{data:{id:string, title:string, amou
     return(
         <View style={transactions.container}>
             <View>
-                <Text>{data.title}</Text>
+                <Text style={transactions.title}>{data.title}</Text>
             </View>
             <Text>₹{data.amount.toFixed(2)}</Text>
         </View>

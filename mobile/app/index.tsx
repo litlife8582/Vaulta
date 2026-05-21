@@ -13,7 +13,7 @@ import { globalStyle } from "@/styles/global";
 //Component
 import Titlebar from "@/components/Titlebar";
 import BalanceCard from "@/components/budget/BalanceCard";
-import SpendingBreakdown from "@/components/budget/spendings/SpendingBreakdown";
+import TransactionHistory from "@/components/budget/spendings/TransactionHistory";
 import { GestureHandlerRootView, ScrollView } from "react-native-gesture-handler";
 
 export default function Index() {
@@ -23,6 +23,8 @@ export default function Index() {
   const [loaded, error] = useFonts({
     Montserrat_extraBold: require("../assets/font/Montserrat/static/Montserrat-ExtraBold.ttf"),
     Montserrat_bold: require("../assets/font/Montserrat/static/Montserrat-Bold.ttf"),
+    Montserrat_boldItalic:require("../assets/font/Montserrat/static/Montserrat-BoldItalic.ttf"),
+    Montserrat_extraLight:require("../assets/font/Montserrat/static/Montserrat-ExtraLight.ttf"),
     Poppins: require("../assets/font/Poppins/Poppins-Regular.ttf"),
   });
 
@@ -43,7 +45,7 @@ export default function Index() {
         <Titlebar />
         <View style={{ flex: 1, marginTop: 40 }}>
           <BalanceCard balance={balance} growthPercentage={growthPercentage} />
-          <SpendingBreakdown />
+          <TransactionHistory />
         </View>
       </ScrollView>
     </SafeAreaView>
