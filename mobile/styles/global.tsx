@@ -19,7 +19,7 @@ export const titlebar=StyleSheet.create({
         padding:20
     },
     text:{
-        fontFamily:"Montserrat",
+        fontFamily:"Montserrat_extraBold",
         fontSize:30,
         color:"#00A572"
     }
@@ -61,16 +61,66 @@ export const balanceCard=StyleSheet.create({
 
 export const spendingBreakdown=StyleSheet.create({
     container:{
-        
+        backgroundColor:"#EAF1FF",
+        padding:30,
+        marginTop:0,
+        margin:15,
+        justifyContent:"center",
+        borderRadius:25,
+        borderColor:"black",
+        borderWidth:0.5
+    },
+    headerRow:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center",
+        marginBottom:20
+    },
+    title:{
+        fontFamily:globalStyle.FontFace,
+        fontSize:20
+    },
+
+    modalOverlay:{
+        flex:1,
+        backgroundColor:"rgba(0,0,0,0.5)",
+        justifyContent:"center",
+        padding:30,
+    },
+
+    modalTitle:{
+        fontFamily:globalStyle.FontFace,
+        fontSize:30,
+        color:"#B6C6F0"
     },
     input:{
-        display:"flex",
-        flex:2
+        fontFamily:globalStyle.FontFace,
+        fontSize:25,
+        color:"white",
+        backgroundColor:"#B6C6F0",
+        borderRadius:20,
+        margin:10,
+        padding:20
+    },
+    modalButtons:{
+        flexDirection:"row",
+        justifyContent:"center",
+        margin:30,
+    },
+    modalButtonTexts:{
+        fontFamily:"Montserrat_bold",
+        fontSize:20,
+        backgroundColor:"#B1F0CE",
+        borderRadius:15,
+        padding:20,
+        width:120,
+        alignContent:"center",
     }
 })
 
 export const transactions=StyleSheet.create({
     container:{
-        
+        padding:20,
+        margin:10,
     }
 })
