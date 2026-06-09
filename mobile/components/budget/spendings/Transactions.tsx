@@ -2,14 +2,14 @@ import React from "react";
 import { View,Text } from "react-native";
 import { transactions } from "@/styles/global";
 
-export default function Transactions({data}:{data:{id:string, title:string, amount:number}}){
+export default function Transactions({data}:{data:{id:string, Title:string, Amount:number}}){
     
     return(
         <View style={transactions.container}>
             <View>
-                <Text style={transactions.title}>{data.title}</Text>
+                <Text style={transactions.title}>{data.Title}</Text>
             </View>
-            <Text>₹{data.amount.toFixed(2)}</Text>
+            <Text>₹{data.Amount.toFixed(2)}</Text>
         </View>
     )
 }
