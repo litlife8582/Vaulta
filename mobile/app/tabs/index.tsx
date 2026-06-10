@@ -21,11 +21,11 @@ export default function Index() {
   const [growthPercentage, setGrowthPercentage] = useState(0);
 
   const [loaded, error] = useFonts({
-    Montserrat_extraBold: require("../assets/font/Montserrat/static/Montserrat-ExtraBold.ttf"),
-    Montserrat_bold: require("../assets/font/Montserrat/static/Montserrat-Bold.ttf"),
-    Montserrat_boldItalic:require("../assets/font/Montserrat/static/Montserrat-BoldItalic.ttf"),
-    Montserrat_extraLight:require("../assets/font/Montserrat/static/Montserrat-ExtraLight.ttf"),
-    Poppins: require("../assets/font/Poppins/Poppins-Regular.ttf"),
+    Montserrat_extraBold: require("../../assets/font/Montserrat/static/Montserrat-ExtraBold.ttf"),
+    Montserrat_bold: require("../../assets/font/Montserrat/static/Montserrat-Bold.ttf"),
+    Montserrat_boldItalic:require("../../assets/font/Montserrat/static/Montserrat-BoldItalic.ttf"),
+    Montserrat_extraLight:require("../../assets/font/Montserrat/static/Montserrat-ExtraLight.ttf"),
+    Poppins: require("../../assets/font/Poppins/Poppins-Regular.ttf"),
   });
 
   useEffect(() => {
