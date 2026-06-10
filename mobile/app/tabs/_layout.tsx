@@ -4,7 +4,10 @@ import { Ionicons } from "@expo/vector-icons";
 export default function TabLayout(){
 
     return(
-    <Tabs screenOptions={{tabBarActiveTintColor:'#0A2540', headerShown:false}}>
+    <Tabs screenOptions={{
+        tabBarActiveTintColor:'#0A2540', 
+        headerShown:false
+    }}>
         <Tabs.Screen
             name="index"
             options={{
@@ -21,7 +24,7 @@ export default function TabLayout(){
             }}
         />
         <Tabs.Screen
-            name="acounts"
+            name="accounts"
             options={{
                 title:"Accounts",
                 tabBarIcon:({color})=><Ionicons name="wallet" size={24} color={color}/>

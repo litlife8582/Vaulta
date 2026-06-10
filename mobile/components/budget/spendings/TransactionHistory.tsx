@@ -99,11 +99,11 @@ export default function TransactionHistory() {
       <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
 
 
-      <FlatList
-        data={transactionsList}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <Transactions data={item} />}
-      />
+      <View>
+        {transactionsList.map((item)=>(
+          <Transactions key={item.id} data={item}/>
+        ))}
+      </View>
 
       <Modal
         visible={isModalVisible}
