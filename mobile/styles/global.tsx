@@ -143,3 +143,52 @@ export const transactions=StyleSheet.create({
         fontSize:15,
     }
 })
+
+export const investmentCard=StyleSheet.create({
+    container:{
+        backgroundColor:"#1A2B4C",
+        padding:30,
+        marginTop:0,
+        margin:15,
+        justifyContent:"center",
+        borderRadius:25,
+    },
+
+    txt1:{
+        fontFamily:globalStyle.FontFace,
+        color:"#AAABAC",
+        fontSize:20  
+    },
+
+    investmentAmount:{
+        fontFamily:globalStyle.FontFace,
+        color:"#EDF0FF",
+        fontSize:50
+    },
+    growthPercentage:{
+        fontFamily:globalStyle.FontFace,
+        backgroundColor:"#C5C7C8",
+        borderRadius:30,
+        margin:30,
+        marginTop:13,
+        padding:10,
+        width:"60%",
+        justifyContent:"center",
+        textAlign:'center'
+    },
+    btncontainer:{
+        flex:1,
+        flexDirection:"row",
+        
+    },
+    buttons:{
+        fontFamily:globalStyle.FontFace,
+        backgroundColor:"#C5C7C8",
+        borderRadius:15,
+        padding:18,
+        margin:15,
+        width:"40%",
+        textAlign:"center",
+        alignContent:"center"
+    }
+})

@@ -41,7 +41,7 @@ export default function Index() {
     <GestureHandlerRootView style={{flex:1}}>
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView showsVerticalScrollIndicator={false}> 
-        <View style={{ flex: 1, marginTop: 40 }}>
+        <View style={{ flex: 1}}>
           <BalanceCard balance={balance} growthPercentage={growthPercentage} />
           <TransactionHistory />
         </View>
