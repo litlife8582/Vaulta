@@ -11,7 +11,6 @@ import { useState, useEffect } from "react";
 import { globalStyle } from "@/styles/global";
 
 //Component
-import Titlebar from "@/components/Titlebar";
 import BalanceCard from "@/components/budget/BalanceCard";
 import TransactionHistory from "@/components/budget/spendings/TransactionHistory";
 import { GestureHandlerRootView, ScrollView } from "react-native-gesture-handler";
@@ -41,8 +40,7 @@ export default function Index() {
   return (
     <GestureHandlerRootView style={{flex:1}}>
     <SafeAreaView style={{ flex: 1 }}>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <Titlebar />
+      <ScrollView showsVerticalScrollIndicator={false}> 
         <View style={{ flex: 1, marginTop: 40 }}>
           <BalanceCard balance={balance} growthPercentage={growthPercentage} />
           <TransactionHistory />
